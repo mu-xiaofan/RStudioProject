@@ -7,3 +7,7 @@ This is a R package contains the following functions:
 - standardizeNames = function(data) : Standardize column names to camelCase
 - minimumN = function(x1,x2) : Calculate minimum sample size for T-Tests,and smallest sample size can be returned was set to 2
 - downloadRedcapReport = function(redcapTokenName,redcapUrl,redcapReportId) : Download a report from REDCap
+
+# Installation
+Please use library(devtools):
+install_github("mu-xiaofan/RStudioProject/Functions")
