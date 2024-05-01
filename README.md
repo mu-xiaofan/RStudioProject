@@ -11,4 +11,4 @@ This is a R package contains the following functions:
 # Installation
 Please use library(devtools):
 
-## ```install_github("mu-xiaofan/RStudioProject/Functions")```
+```install_github("mu-xiaofan/RStudioProject/Functions")```
