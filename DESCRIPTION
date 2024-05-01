@@ -1,0 +1,19 @@
+Package: Functions
+Type: Package
+Title: BMI510
+Version: 0.1.0
+Author: Xiaofan Mu
+Maintainer: Xiaofan <xiaofan.mu@emory.edu>
+Description: This R package contains the final project for BMI510 class at Emory University.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Imports:
+    ggplot2,
+    dplyr,
+    tibble,
+    tidyr,
+    janitor,
+    snakecase,
+    pwr
+RoxygenNote: 7.3.1
