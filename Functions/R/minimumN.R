@@ -1,4 +1,4 @@
-#' Calculate Minimum Sample Size for T-Tests
+#' Calculate minimum sample size for T-Tests,and smallest sample size can be returned was set to 2
 #'
 #' This function is a wrapper around pwr::pwr.t2n.test that takes either one ( x1 )
 #' or two ( x2 ) samples of preliminary data and returns the minimum sample size needed

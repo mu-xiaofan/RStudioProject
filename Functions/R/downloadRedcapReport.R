@@ -1,4 +1,4 @@
-#' Download a Report from REDCap
+#' Download a report from REDCap
 #'
 #' This function retrieves a report from a REDCap project using API credentials and returns it as a tibble.
 #' It requires the user to have set an API token in their .Renviron file under the specified name.

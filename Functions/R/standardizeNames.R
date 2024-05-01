@@ -1,4 +1,4 @@
-#' Standardize Column Names to camelCase
+#' Standardize column names to camelCase
 #'
 #' This function is a wrapper around dplyr::rename_with and janitor::make_clean_names that
 #' converts the variables in a tibble data to "small_camel" case.

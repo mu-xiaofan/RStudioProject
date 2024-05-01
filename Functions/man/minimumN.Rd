@@ -2,7 +2,7 @@
 % Please edit documentation in R/minimumN.R
 \name{minimumN}
 \alias{minimumN}
-\title{Calculate Minimum Sample Size for T-Tests}
+\title{Calculate minimum sample size for T-Tests,and smallest sample size can be returned was set to 2}
 \usage{
 minimumN(x1, x2 = NULL)
 }

@@ -2,7 +2,7 @@
 % Please edit documentation in R/standardizeNames.R
 \name{standardizeNames}
 \alias{standardizeNames}
-\title{Standardize Column Names to camelCase}
+\title{Standardize column names to camelCase}
 \usage{
 standardizeNames(data)
 }
