@@ -19,20 +19,30 @@
 #' @export
 minimumN = function(x1, x2 = NULL) {
   if (!is.null(x2)) {
-    if (all(x1 == x1[1]) && all(x2 == x2[1])) {
-      if (x1[1] != x2[1]) {
+    if (all(x1 == x1[1]) && all(x2 == x2[1]))
+      {
+      if (x1[1] != x2[1])
+        {
         #Set 2 to the default smallest sample size because the effect size is extremely large
         return(2)
-      } else {
+      }
+      else
+        {
         return("Samples are identical or have zero variance; an infinite sample size is implied for any meaningful test.")
       }
-    } else {
+    }
+    else
+      {
       n1 = length(x1)
       n2 = length(x2)
-      d = abs(mean(x1) - mean(x2)) / sqrt(var(x1)/n1 + var(x2)/n2)
+      #d = abs(mean(x1) - mean(x2)) / sqrt((sd(x1)^2 + sd(x2)^2) / 2)
+      d = abs(mean(x1) - mean(x2)) / (sqrt(((n1 - 1) * (sd(x1))^2 + (n2 - 1) * (sd(x2))^2) / (n1 + n2 - 2)))
     }
-  } else {
-    if (all(x1 == x1[1])) {
+  }
+  else
+    {
+    if (all(x1 == x1[1]))
+      {
       return("Sample has zero variance or all values are equal: An infinite sample size is implied for any meaningful test.")
     }
     d = abs(mean(x1) / sd(x1))
