@@ -10,5 +10,7 @@ This is a R package contains the following functions:
 
 # Installation
 
-```library(devtools)
-install_github("mu-xiaofan/RStudioProject/Functions")```
+```
+library(devtools)
+install_github("mu-xiaofan/RStudioProject/Functions")
+```
