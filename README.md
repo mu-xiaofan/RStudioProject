@@ -9,6 +9,6 @@ This is a R package contains the following functions:
 - downloadRedcapReport = function(redcapTokenName,redcapUrl,redcapReportId) : Download a report from REDCap
 
 # Installation
-Please use library(devtools):
 
-```install_github("mu-xiaofan/RStudioProject/Functions")```
+```library(devtools)
+install_github("mu-xiaofan/RStudioProject/Functions")```
