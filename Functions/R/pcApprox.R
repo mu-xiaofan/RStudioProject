@@ -20,14 +20,16 @@ pcApprox = function(x, npc) {
     stop("Number of principal components must be between 1 and the number of columns in x")
     }
   #Perform PCA on the data
-  pca = prcomp(x, center = TRUE, scale. = TRUE)
+  #pca = prcomp(x, center = TRUE, scale. = TRUE)
+  pca = prcomp(x, scale. = FALSE)
   #Project the data onto the first 'npc' principal components
   projection = pca$x[, 1:npc]
   #Reconstruct the data using the selected principal components
   reconstruction = projection %*% t(pca$rotation[, 1:npc])
-  reconstructed_data = sweep(reconstruction, 2, pca$center, "+")
-  if (!is.null(pca$scale)) {
-    reconstructed_data = sweep(reconstructed_data, 2, pca$scale, "*")
-  }
+  #reconstructed_data = sweep(reconstruction, 2, -pca$center, "+")
+  #if (!is.null(pca$scale)) {
+    #reconstructed_data = sweep(reconstructed_data, 2, pca$scale, "*")
+  #}
+  reconstructed_data = scale(reconstruction,center =-pca$center,scale=FALSE)
   return(reconstructed_data)
 }
